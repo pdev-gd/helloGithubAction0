@@ -1,0 +1,17 @@
+name: helloGithubAction
+ 
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     
+    - name: print kimsource
+      run: echo hello, kimsource
+    - name: print directory!!
+      run: ls -al
+    - name: print python version
+      run: python -V
+    - name: print go version
+      run: go version
